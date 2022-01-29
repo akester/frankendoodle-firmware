@@ -265,7 +265,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define ENDSTOP_X_BACK_ON_HOME 1
 #define ENDSTOP_Y_BACK_ON_HOME 1
 #define ENDSTOP_Z_BACK_ON_HOME 0
-#define ALWAYS_CHECK_ENDSTOPS 0
+#define ALWAYS_CHECK_ENDSTOPS 1
 
 // ################# XYZ movements ###################
 
@@ -282,9 +282,9 @@ It also can add a delay to wait for spindle to run on full speed.
 #define X_HOME_DIR 1
 #define Y_HOME_DIR 1
 #define Z_HOME_DIR -1
-#define X_MAX_LENGTH 200
-#define Y_MAX_LENGTH 200
-#define Z_MAX_LENGTH 200
+#define X_MAX_LENGTH 195
+#define Y_MAX_LENGTH 190
+#define Z_MAX_LENGTH 175
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -320,11 +320,11 @@ It also can add a delay to wait for spindle to run on full speed.
 #define MAX_INACTIVE_TIME 0L
 #define MAX_FEEDRATE_X 100
 #define MAX_FEEDRATE_Y 100
-#define MAX_FEEDRATE_Z 2
+#define MAX_FEEDRATE_Z 10
 #define HOMING_FEEDRATE_X 40
 #define HOMING_FEEDRATE_Y 40
-#define HOMING_FEEDRATE_Z 2
-#define HOMING_ORDER HOME_ORDER_ZXY
+#define HOMING_FEEDRATE_Z 4
+#define HOMING_ORDER HOME_ORDER_XYZ
 #define ZHOME_MIN_TEMPERATURE 0
 #define ZHOME_HEAT_ALL 1
 #define ZHOME_HEAT_HEIGHT 20
