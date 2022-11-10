@@ -55,6 +55,8 @@
 #define FAN_THERMO_MAX_TEMP 60
 #define FAN_THERMO_THERMISTOR_PIN -1
 #define FAN_THERMO_THERMISTOR_TYPE 1
+#undef X_MAX_PIN
+#define X_MAX_PIN ORIG_Z_MAX_PIN
 
 //#define EXTERNALSERIAL  use Arduino serial library instead of build in. Requires more ram, has only 63 byte input buffer.
 // Uncomment the following line if you are using Arduino compatible firmware made for Arduino version earlier then 1.0
@@ -83,7 +85,7 @@
 #define EXT0_Z_OFFSET 0
 #define EXT0_STEPS_PER_MM 104
 #define EXT0_TEMPSENSOR_TYPE 1
-#define EXT0_TEMPSENSOR_PIN TEMP_0_PIN
+#define EXT0_TEMPSENSOR_PIN TEMP_2_PIN
 #define EXT0_HEATER_PIN HEATER_0_PIN
 #define EXT0_STEP_PIN ORIG_E0_STEP_PIN
 #define EXT0_DIR_PIN ORIG_E0_DIR_PIN
@@ -557,7 +559,7 @@ Values must be in range 1..255
             "pidDriveMax": 230,
             "pidMax": 255,
             "sensorType": 1,
-            "sensorPin": "TEMP_0_PIN",
+            "sensorPin": "TEMP_2_PIN",
             "heaterPin": "HEATER_0_PIN",
             "maxFeedrate": 50,
             "startFeedrate": 20,
@@ -882,7 +884,7 @@ Values must be in range 1..255
     "xMinPin": "ORIG_X_MIN_PIN",
     "yMinPin": "ORIG_Y_MIN_PIN",
     "zMinPin": "ORIG_Z_MIN_PIN",
-    "xMaxPin": "ORIG_X_MAX_PIN",
+    "xMaxPin": "ORIG_Z_MAX_PIN",
     "yMaxPin": "ORIG_Y_MAX_PIN",
     "zMaxPin": "ORIG_Z_MAX_PIN",
     "deltaHomeOnPower": "0",
