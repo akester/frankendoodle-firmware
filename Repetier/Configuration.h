@@ -67,8 +67,8 @@
 #define MIXING_EXTRUDER 0
 
 #define DRIVE_SYSTEM 0
-#define XAXIS_STEPS_PER_MM 43
-#define YAXIS_STEPS_PER_MM 43
+#define XAXIS_STEPS_PER_MM 44.75
+#define YAXIS_STEPS_PER_MM 44.75
 #define ZAXIS_STEPS_PER_MM 140
 #define EXTRUDER_FAN_COOL_TEMP 50
 #define PDM_FOR_EXTRUDER 0
@@ -285,7 +285,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define Y_HOME_DIR 1
 #define Z_HOME_DIR -1
 #define X_MAX_LENGTH 195
-#define Y_MAX_LENGTH 190
+#define Y_MAX_LENGTH 187
 #define Z_MAX_LENGTH 175
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
@@ -541,8 +541,8 @@ Values must be in range 1..255
     "baudrate": 115200,
     "bluetoothSerial": -1,
     "bluetoothBaudrate": 115200,
-    "xStepsPerMM": 43,
-    "yStepsPerMM": 43,
+    "xStepsPerMM": 44.75,
+    "yStepsPerMM": 44.75,
     "zStepsPerMM": 140,
     "xInvert": 0,
     "xInvertEnable": 0,
@@ -656,7 +656,7 @@ Values must be in range 1..255
     "yMinPos": 0,
     "zMinPos": 0,
     "xLength": 195,
-    "yLength": 190,
+    "yLength": 187,
     "zLength": 175,
     "alwaysCheckEndstops": "1",
     "disableX": "0",
